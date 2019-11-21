@@ -2,9 +2,18 @@
 title: ""
 author: "Veen, D."
 output: 
-  html_document:
-    toc: true
+  pdf_document:
+    toc: false
     toc_depth: 2
+    includes:
+      in_header: preamble.tex
+      # before_body: before_body.tex
+documentclass: article
+classoption: 
+ # - openright
+ # - titlepage 
+ - 12pt
+ - a4paper      
 link-citations: yes
 bibliography:
 - packages.bib
@@ -15,7 +24,9 @@ csl: apa.csl
 # THIS IS A TEMPLATED RMD FILE AND THE TEMPLATE CAN BE REQUIRED USING:
 # if (!requireNamespace("devtools")) install.packages("devtools")
 # devtools::install_github("VeenDuco/DVtemplates")
-# This is the default_clean template.
+# This is the pdf_linecount template.
+# linecounts can be switched off in the preamble.tex file by
+# putting a '%' before '\linenumbers'
 
 # specify packages to be loaded, also inlcuded in library
 .packages <- c(NULL)
