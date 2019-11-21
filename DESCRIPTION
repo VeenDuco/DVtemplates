@@ -1,0 +1,12 @@
+Package: DVtemplates
+Type: Package
+Title: R markdown templates for personal use.
+Version: 0.1.0
+Author: Veen, D. 
+Maintainer: Veen, D. <ducoveen@gmail.com>
+Description: R markdown templates for personal use.
+    To be extended at a later time. 
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
