@@ -12,7 +12,7 @@ favicon: "favicon.ico"
 ```{r setup, include=FALSE}
 # THIS IS A TEMPLATED RMD FILE AND THE TEMPLATE CAN BE REQUIRED USING:
 # if (!requireNamespace("devtools")) install.packages("devtools")
-# devtools::install_github("VeenDuco/rmd_templates_dv")
+# devtools::install_github("VeenDuco/DVtemplates")
 # This is the default_clean template.
 
 # specify packages to be loaded, also inlcuded in library
