@@ -1,0 +1,6 @@
+name: default_clean
+description: >
+   A template that contains some functions, 
+   reference and bibliography setup, 
+   and some default settings for the setup.
+create_dir: FALSE

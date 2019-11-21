@@ -1,0 +1,52 @@
+---
+title: ""
+author: "Veen, D."
+output: html_document
+link-citations: yes
+  bibliography:
+- packages.bib
+csl: apa.csl
+favicon: "favicon.ico"
+---
+
+```{r setup, include=FALSE}
+# THIS IS A TEMPLATED RMD FILE AND THE TEMPLATE CAN BE REQUIRED USING:
+# if (!requireNamespace("devtools")) install.packages("devtools")
+# devtools::install_github("VeenDuco/rmd_templates_dv")
+# This is the default_clean template.
+
+# specify packages to be loaded, also inlcuded in library
+.packages <- c("")
+
+# knitr options
+knitr::opts_chunk$set(
+  include = TRUE,
+  cache = TRUE,
+  collapse = TRUE,
+  echo = TRUE,
+  message = FALSE,
+  tidy = FALSE,
+  warning = FALSE,
+  comment = "  ",
+  dev = "png",
+  dpi = 300,
+  fig.align = "center",
+  fig.width = 7,
+  fig.asp = 0.618,
+  fig.show = "hold",
+  out.width = "90%"
+)
+# # automatically create a bib database for R packages
+knitr::write_bib(c(.packages()), 'packages.bib')
+# load packages 
+lapply(.packages, library, character.only = TRUE)
+
+# some functions
+printf <- function(msg = "%5.3f", ...) {
+  cat(sprintf(msg, ...))
+}
+print_file <- function(file) {
+  cat(paste(readLines(file), "\n", sep=""), sep="")
+}
+```
+
