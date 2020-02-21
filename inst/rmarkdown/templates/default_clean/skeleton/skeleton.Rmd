@@ -7,7 +7,7 @@ output:
     toc_depth: 2
 link-citations: yes
 bibliography:
-- packages.bib
+# - packages.bib
 csl: apa.csl
 ---
 
@@ -55,7 +55,7 @@ print_file <- function(file) {
 # Original Computing Environment
 
 ```{r}
-writeLines(readLines(file.path(Sys.getenv("HOME"), ".R/Makevars")))
+# writeLines(readLines(file.path(Sys.getenv("HOME"), ".R/Makevars")))
 devtools::session_info()
 ```
 
